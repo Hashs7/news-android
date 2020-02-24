@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DMII</string>
+    <string name="compute">Envoyer</string>
+    <string name="first_number">Entrez le premier nombre</string>
+    <string name="second_number">Entrez le second nombre</string>
+    <string name="number_error">N\'importe quoi</string>
+    <string name="result">La %s de %.2f et de %.2f est %.2f</string>
+    <string name="sum">somme</string>
+    <string name="minus">soustraction</string>
+    <string name="product">produit</string>
+    <string name="divise">division</string>
+</resources>

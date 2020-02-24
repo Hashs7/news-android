@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/article_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:contentDescription="TODO" />
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Headline4"
+        android:id="@+id/article_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Titre de l'article"
+        app:layout_constraintTop_toBottomOf="@id/article_image" />
+
+    <TextView
+        android:id="@+id/article_source"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Source"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/article_title"
+        />
+
+    <TextView
+        android:id="@+id/article_author"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        app:layout_constraintStart_toEndOf="@id/article_source"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Auteur"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/article_title"
+        />
+
+    <TextView
+        android:id="@+id/article_description"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Description de l'article"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/material_fav"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/article_source"
+        android:id="@+id/material_fav"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Ajouter en favori"
+        app:icon="@drawable/ic_star_fill" />
+
+    <com.google.android.material.button.MaterialButton
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/article_description"
+        android:id="@+id/material_share"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Partager"
+        app:icon="@drawable/ic_star_fill" />
+
+    <com.google.android.material.button.MaterialButton
+        app:layout_constraintStart_toEndOf="@id/material_share"
+        app:layout_constraintTop_toBottomOf="@id/article_description"
+        android:id="@+id/material_original"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Voir l'original"
+        app:icon="@drawable/ic_star_fill" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

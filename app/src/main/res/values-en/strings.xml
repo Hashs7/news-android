@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DMII</string>
+    <string name="compute">Submit</string>
+    <string name="first_number">Enter the first number</string>
+    <string name="result">%s of %.2f and of %.2f is %.2f</string>
+    <string name="second_number">Enter the second number</string>
+    <string name="number_error">wtf</string>
+    <string name="sum">Sum</string>
+    <string name="minus">Minus</string>
+    <string name="product">Product</string>
+    <string name="divise">Divise</string>
+</resources>
